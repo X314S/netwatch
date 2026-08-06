@@ -23,8 +23,8 @@
 
 ## 🚀 Installation & usage (for users)
 
-1. Download the **latest release** from the [Releases page](https://github.com/X314S/netwatch/releases) and extract it into a folder named `NetWatch` (e.g. `C:\NetWatch`).
-2. Run **`NetWatch.exe`**. That's it — no Python or Node required.
+1. Download the **latest release** from the [Releases page](https://github.com/X314S/netwatch/releases) and extract the zip — you'll get a `NetWatch` folder (put it anywhere, e.g. `C:\NetWatch`).
+2. Run **`NetWatch.exe`** inside it. That's it — no Python or Node required.
 
 > **WebView2:** the UI uses the Windows WebView2 runtime, which ships with Windows 10/11 in most cases. If it's missing, the app runs the bundled installer automatically (inside the `redist` folder).
 
