@@ -13,6 +13,8 @@
 - 🌐 **IP information:** local IPv4/IPv6 + public IP with country / city / ISP / timezone
 - 📶 **Ping monitor:** custom targets + searchable list of well-known DNS / websites; live min/max/avg and packet loss
 - ⚙️ **Per-process connections:** full TCP/UDP socket list for every app; click any IP for a live probe (ping, port check, reverse DNS, geo)
+- 🧰 **Network Toolkit:** DNS/ARP/Routing, Traceroute, Port/ LAN Wi‑Fi scanners, Whois, WOL, certificates, hosts/flush/reset, firewall — with snapshots & undo
+- 🖼️ **Mini-HUD overlay:** an always-on-top strip of live speed/ping/totals that docks to the top edge (slides left/right), can be pinned in place, works on your chosen monitors, adjusts opacity/click-through, and has a **Process Watch** panel (who is using the network, their sockets — add any of them as a live HUD ping)
 - 🚀 **Speed test:** real download / upload / latency (Cloudflare)
 - 🛡️ **VPN detection** and smart alerts + **event history**
 - 🖥️ **System tray:** close-to-tray, low background usage
@@ -43,7 +45,7 @@
 | **Ping** | Ping monitor + famous DNS/website presets (search & add) |
 | **History** | Event log (connect/disconnect, alerts, …) with filters |
 | **Diagnostics** | Full network report + Copy button |
-| **Settings** | Theme & accent color, update interval, ping threshold, launch on startup, clear history, reset preferences, check for updates |
+| **Settings** | Theme & accent color, update interval, ping threshold, notifications (categories, sound, quiet hours), launch on startup, clear history, reset preferences, check for updates |
 
 ### Updates
 - The app checks GitHub for new releases on startup and via the **Check** button in Settings.
