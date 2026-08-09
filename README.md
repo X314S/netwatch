@@ -4,8 +4,6 @@
 
 **Platform:** Windows 10/11
 
-**Latest release:** v0.14.0 — SIGNAL v7.4 UI · Active Connections · multi-provider speed test · window chrome
-
 ---
 
 ## ✨ Features
