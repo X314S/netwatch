@@ -1,5 +1,7 @@
 # NetWatch
 
+**[English](README.md)** · [فارسی](README.fa.md)
+
 **NetWatch** is a lightweight, offline-first Windows desktop app for network monitoring — network adapters, live internet speed, IP information, ping monitoring, per-process connections, a network toolkit and diagnostics, all in one modern dashboard.
 
 **Platform:** Windows 10/11
@@ -50,6 +52,56 @@
 ### Updates
 - The app checks GitHub for new releases on startup and via the **Check** button in Settings.
 - When a newer version exists, an **"Update vX"** button appears in the top bar → download and **Install & Restart**.
+
+---
+
+## ✅ Verifying downloads
+
+Every release ships a `SHA256SUMS` file next to the zip. Before running anything, verify the archive you downloaded:
+
+**Windows (PowerShell):**
+```powershell
+# compare the output with the hash listed in SHA256SUMS
+certutil -hashfile NetWatch-portable-<version>.zip SHA256
+```
+
+**Windows / Linux / macOS (sha256sum):**
+```bash
+# download SHA256SUMS from the release and run:
+sha256sum -c SHA256SUMS        # → "NetWatch-portable-<version>.zip: OK"
+```
+
+The app itself re-verifies this checksum before applying an in-app update — a mismatched archive is never applied.
+
+---
+
+## 🔒 Privacy
+
+**What NetWatch does NOT do:** it has no account system, no API keys, and it does not collect or store any personal data. Everything the app displays — network adapters, traffic, per-process connections, DNS configuration, hosts file, history, restore points — is gathered through local Windows APIs and **stored only on your device** (in the app's local data folder). None of that data is ever transmitted anywhere.
+
+**The complete list of outbound network requests** (nothing else leaves your device):
+
+| Feature | Where it connects | What is sent |
+|---|---|---|
+| Public IP / geo card | `ip-api.com` (+ fallbacks `ipwho.is`, `ipapi.co`, `ipify`) | Your public IP address (inherent to the feature) |
+| Update check | `api.github.com` (X314S/netwatch) | Nothing but the request itself |
+| Ad banner | NetWatch Cloudflare Worker | Ad campaign ids; banner images |
+| Anonymous daily ping | NetWatch Cloudflare Worker | A random anonymous install id + app version — nothing else (see below) |
+| Speed test / Whois / SSL / HTTP tester / DNS tools | The servers you choose (Cloudflare, Fast.com, Ookla, RDAP, …) | Only what the tool you ran sends to the target you picked |
+
+### Anonymous daily ping — in short
+
+No data is sent. Once a day the app reports a random anonymous install id (generated on your device) + the app version, so the developer can count active installs. That's all — no name, no IP, no device or usage data.
+
+---
+
+## ⚠️ Disclaimer
+
+NetWatch is a **network display and diagnostic tool**. It is provided **"AS IS", without warranty of any kind** — express or implied, including fitness for a particular purpose.
+
+- You are solely responsible for how you use it. **Misuse of the toolkit (firewall changes, network reset, hosts-file edits, admin-level commands, or killing processes based on incomplete information) is entirely your responsibility** and may disrupt your system or network.
+- The developer/team is **not liable** for any damage, data loss, or disruption resulting from the use — or misuse — of the software or its features.
+- Always confirm before destructive actions; the app offers restore points for most system changes — use them.
 
 ---
 
