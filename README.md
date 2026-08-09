@@ -1,23 +1,25 @@
 # NetWatch
 
-**NetWatch** is a lightweight, offline-first Windows desktop app for network monitoring — network adapters, live internet speed, IP information, ping monitoring, per-process connections and diagnostics, all in one modern dashboard.
+**NetWatch** is a lightweight, offline-first Windows desktop app for network monitoring — network adapters, live internet speed, IP information, ping monitoring, per-process connections, a network toolkit and diagnostics, all in one modern dashboard.
 
 **Platform:** Windows 10/11
+
+**Latest release:** v0.14.0 — SIGNAL v7.4 UI · Active Connections · multi-provider speed test · window chrome
 
 ---
 
 ## ✨ Features
 
-- 📊 **Live dashboard:** real-time download/upload speed, live chart, and total usage (system + this app)
+- 📊 **Live dashboard:** real-time download/upload speed, live chart, total usage (system + this app), public-IP geo card and top processes
 - 🖧 **Network adapters:** status, type, link speed, IPs, active-adapter selection + DNS manager
-- 🌐 **IP information:** local IPv4/IPv6 + public IP with country / city / ISP / timezone
-- 📶 **Ping monitor:** custom targets + searchable list of well-known DNS / websites; live min/max/avg and packet loss
-- ⚙️ **Per-process connections:** full TCP/UDP socket list for every app; click any IP for a live probe (ping, port check, reverse DNS, geo)
-- 🧰 **Network Toolkit:** DNS/ARP/Routing, Traceroute, Port/ LAN Wi‑Fi scanners, Whois, WOL, certificates, hosts/flush/reset, firewall — with snapshots & undo
-- 🖼️ **Mini-HUD overlay:** an always-on-top strip of live speed/ping/totals that docks to the top edge (slides left/right), can be pinned in place, works on your chosen monitors, adjusts opacity/click-through, and has a **Process Watch** panel (who is using the network, their sockets — add any of them as a live HUD ping)
-- 🚀 **Speed test:** real download / upload / latency (Cloudflare)
-- 🛡️ **VPN detection** and smart alerts + **event history**
-- 🖥️ **System tray:** close-to-tray, low background usage
+- 🌐 **IP information:** local IPv4/IPv6 + public IP with country / city / ISP
+- 📶 **Ping monitor:** custom targets + searchable presets of well-known DNS / websites; live min/max/avg and packet loss
+- ⚙️ **Active Connections:** per-process TCP/UDP socket tables with protocol filter chips, live traffic dots, summary counters and an inline endpoint inspector (ping / location / port / rDNS)
+- 🧰 **Network Toolkit:** DNS/ARP/Routing, Traceroute, Port / LAN / Wi‑Fi scanners, Whois, WOL, SSL checker, HTTP tester, hosts editor / DNS flush / network reset / firewall manager — with snapshots & undo
+- 🚀 **Speed test:** real download / upload / latency from **Cloudflare, Fast.com or Ookla** — live phase feedback (Starting → Latency → Download → Upload), live Mbps, elapsed timer and a Cancel button
+- 🖼️ **Mini-HUD overlay:** an always-on-top strip of live speed/ping/totals that docks to the top edge, can be pinned, works on your chosen monitors, adjusts opacity/click-through, and has a **Process Watch** panel
+- 🛡️ **VPN detection**, smart alerts + **event history** and restore points
+- 🖥️ **System tray:** close-to-tray, low background usage, global hotkeys (`Ctrl+Alt+N/H/L`)
 - 🔄 **In-app updates:** notified inside the app when a new release is published; update with one click
 - 🔒 **Offline-first:** the core works without internet (only public IP, geo and speed test are optional online features)
 
@@ -40,12 +42,12 @@
 
 | Section | What it does |
 |---------|--------------|
-| **Dashboard** | Overview: speed, IP, ping |
-| **Network** | Adapters, DNS, per-process connections, speed test |
-| **Ping** | Ping monitor + famous DNS/website presets (search & add) |
+| **Dashboard** | Overview: speed, IP, ping, top processes |
+| **Network** | Adapters, DNS, Active Connections, speed test |
+| **Tools** | Ping monitor, DNS/ARP/Routing, scanners, diagnostics tools |
 | **History** | Event log (connect/disconnect, alerts, …) with filters |
-| **Diagnostics** | Full network report + Copy button |
-| **Settings** | Theme & accent color, update interval, ping threshold, notifications (categories, sound, quiet hours), launch on startup, clear history, reset preferences, check for updates |
+| **Restore** | System snapshots & undo for destructive changes |
+| **Settings** | Theme & accent color, update interval, ping threshold, notifications, launch on startup, mini-HUD, clear history, reset preferences, check for updates |
 
 ### Updates
 - The app checks GitHub for new releases on startup and via the **Check** button in Settings.
