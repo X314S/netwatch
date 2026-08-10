@@ -1,3 +1,12 @@
+<div align="center">
+
+![Release](https://img.shields.io/github/v/release/X314S/netwatch?color=4FFF4D)
+![Downloads](https://img.shields.io/github/downloads/X314S/netwatch/total?color=1E90FF)
+![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
+![Status](https://img.shields.io/badge/status-active-4FFF4D)
+
+</div>
+
 # NetWatch
 
 **[English](README.md)** · [فارسی](README.fa.md)
