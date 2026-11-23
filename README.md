@@ -42,6 +42,8 @@
 > **WebView2:** the UI uses the Windows WebView2 runtime, which ships with Windows 10/11 in most cases. If it's missing, the app runs the bundled installer automatically (inside the `redist` folder).
 
 ### First run
+- Enable **Start with Windows** on the Dashboard to keep usage history and alerts running from sign-in.
+- For per-app traffic, open **Settings → Monitoring**. If Npcap is missing, **Get Npcap & enable** opens the official download page. Run the installer and return to NetWatch to complete setup.
 - The window opens and NetWatch also lives in the **system tray** (near the clock).
 - Closing the window hides it to the tray (monitoring continues). To fully quit: right-click the tray icon → **Exit**.
 
@@ -100,7 +102,7 @@ The app itself re-verifies this checksum before applying an in-app update — a 
 
 ### Anonymous daily ping — in short
 
-No data is sent. Once a day the app reports a random anonymous install id (generated on your device) + the app version, so the developer can count active installs. That's all — no name, no IP, no device or usage data.
+Once a day the app reports a random anonymous install id (generated on your device) + the app version, so the developer can count active installs. That's all — no name, no IP, no device or usage data.
 
 ---
 
